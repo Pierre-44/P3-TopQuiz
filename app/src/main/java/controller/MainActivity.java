@@ -1,4 +1,4 @@
-package com.pierre44.topquiz;
+package controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,11 +10,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.pierre44.topquiz.R;
+
+import model.User;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView mGretingText;
     private TextView mNameImput;
     private Button mPlayButton;
+    private User mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +51,15 @@ public class MainActivity extends AppCompatActivity {
         mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //User Name saved
+                String firstname = mNameImput.getText().toString();
+                mUser.setFirstName(firstname);
+
                 // The user just clicked
-                Intent gameActivityIntent = new Intent(MainActivity.this, GameActivity.class);
-                startActivity(gameActivityIntent);
+                Intent gameActivity = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(gameActivity);
+
             }
         });
     }
