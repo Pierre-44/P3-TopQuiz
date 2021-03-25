@@ -40,5 +40,9 @@ public class Question {
     public void setQuestionAnswerIndex(int questionAnswerIndex) {
         mQuestionAnswerIndex = questionAnswerIndex;
     }
+
+    public int getAnswerIndex() {
+        return mQuestionAnswerIndex;
+    }
 }
 

@@ -1,17 +1,15 @@
 package controller;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.pierre44.topquiz.R;
-
 import model.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mPlayButton.setOnClickListener(new View.OnClickListener() {
+        mPlayButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
 

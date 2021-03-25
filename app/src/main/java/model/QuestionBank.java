@@ -2,7 +2,6 @@ package model;
 
 
 import java.util.List;
-
 import static java.util.Collections.shuffle;
 
 /**
@@ -21,11 +20,11 @@ public class QuestionBank {
         mNextQuestionIndex = 0;
     }
 
-    public Question getQuestion () {
+    //public Question getQuestion () {
         // s'assurer qu'une fois la fin de liste de question atteinte on retourne au debut de la liste
         //if (mNextQuestionIndex == mQuestionList.size());
         //    mNextQuestionIndex = 0;
-        }
+//    }
 }
 
 

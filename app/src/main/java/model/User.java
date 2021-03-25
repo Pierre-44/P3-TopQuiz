@@ -17,9 +17,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "mFirstname='" + mFirstname + '\'' +
-                '}';
+        return "User{" + "mFirstname='" + mFirstname + '\'' +'}';
     }
 
     public void setFirstName(String firstName) {
