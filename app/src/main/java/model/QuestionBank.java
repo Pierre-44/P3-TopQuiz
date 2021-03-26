@@ -20,11 +20,13 @@ public class QuestionBank {
         mNextQuestionIndex = 0;
     }
 
-    //public Question getQuestion () {
+    public Question getQuestion () {
         // s'assurer qu'une fois la fin de liste de question atteinte on retourne au debut de la liste
-        //if (mNextQuestionIndex == mQuestionList.size());
-        //    mNextQuestionIndex = 0;
-//    }
+        if (mNextQuestionIndex == mQuestionList.size());
+            mNextQuestionIndex = 0;
+
+            return mQuestionList.get(mNextQuestionIndex++);
+    }
 }
 
 

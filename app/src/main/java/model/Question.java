@@ -33,6 +33,10 @@ public class Question {
         return mQuestion;
     }
 
+    public List<String> getChoiceList() {
+        return mQuestionChoiceList;
+    }
+
     public void setQuestionChoiceList(List<String> questionChoiceList) {
         mQuestionChoiceList = questionChoiceList;
     }
@@ -44,5 +48,7 @@ public class Question {
     public int getAnswerIndex() {
         return mQuestionAnswerIndex;
     }
+
+
 }
 

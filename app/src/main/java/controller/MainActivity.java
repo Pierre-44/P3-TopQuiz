@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import com.pierre44.topquiz.R;
@@ -46,15 +45,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mPlayButton.setOnClickListener(new OnClickListener() {
+        mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //User Name saved
+                //Sauvegarder nom utilisateur
                 String firstname = mNameImput.getText().toString();
                 mUser.setFirstName(firstname);
 
-                // The user just clicked
+                // l'utilisateur clic sur le bouton
                 Intent gameActivity = new Intent(MainActivity.this, GameActivity.class);
                 startActivity(gameActivity);
 
